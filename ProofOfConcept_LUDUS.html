@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        LUDUS
+    </title>
+    <style>
+        .parallelogram {
+	        width: 1100px;
+	        height: 70px;
+	        transform: skew(0deg);
+	        background: rgb(0, 0, 0);
+           
+        }
+       
+        
+    </style>
+    <link rel="stylesheet" href="ludus.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+
+</head>
+
+
+<body>
+    <h1>
+        <div class="parallelogram">
+            <img src="images/controller.png" style="width: 50px;"> </img>
+            LUDUS   <button id="home" onclick="showAlert()"> HOME </button>
+                    <button id="latestgames" onclick="showAlert()"> LATEST GAMES </button>
+                    <button id="reviews" onclick="showAlert()"> REVIEWS </button>
+                    <button id="searchbygenre" onclick="showAlert()"> SEARCH BY GENRE </button>
+                    <button id="community" onclick="showAlert()"> COMMUNITY </button>
+                    <button id="faq" onclick="showAlert()"> FAQ </button>
+                    <input type="text" placeholder="Search..">
+        </div>
+    </h1>
+    
+    
+    <h3>
+        ANNOUNCEMENTS  
+    </h3>
+    <img src="Images/gowA.png" style="position:absolute; top:200px; left:50px; width:420px; height:150px">
+    <img src="Images/pokA.png" style="position:absolute; top:370px; left:50px; width:420px; height:150px">
+    <img src="Images/erA.png" style="position:absolute; top:540px; left:50px; width:420px; height:150px">
+<div class="container">
+<!-- Slider main container -->
+    <div class="swiper">
+    <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+      <!-- Slides -->
+            <div class="swiper-slide"><img src= "Images/img1.jpg"></div>
+            <div class="swiper-slide"><img src="Images/ow2.jpg"></div>
+            <div class="swiper-slide"><img src="Images/hog.png"></div>
+    
+        </div>
+         <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+  
+    <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+  
+  </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+<script>
+   const swiper = new Swiper('.swiper', {
+    autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+    },
+    // Optional parameters
+  loop: true,
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  }
+}); 
+</script>
+
+<h4>
+    JOIN OUR DISCORD! 
+</h4>
+<h5>
+    @LUDUSGAMES
+</h5>
+<img src="Images/discord.jpg" style="position:absolute; top:550px; left:630px; width:400px; height:220px">
+<img src="Images/controller.png" style="position:absolute; top:700px; left:1080px; width:50px; height:50px">
+
+
+
+</body>
+
+</html>
